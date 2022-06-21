@@ -1,0 +1,9 @@
+<!DOCTYPE html> - Serve para informar ao navegador o tipo de documento - 
+<html>
+<head> - Armazena informações que o navegador necessita
+ <meta> - Ex: charset -> passa para o navegador qual a codificação dos caracteres do documento
+ <title></title> - Titulo da página
+</head>
+<body> - Corpo do site
+</body>
+</html>
