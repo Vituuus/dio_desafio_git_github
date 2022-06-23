@@ -1,0 +1,7 @@
+#principal, .secundario, .tituloPost{
+	color: blue;
+}
+.tituloPost{
+	font-size: 16px;
+	font-style: italic;
+}
