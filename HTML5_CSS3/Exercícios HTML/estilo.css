@@ -1,7 +1,48 @@
+body{
+	background-color: #f7f7f7;
+	font-family: Verdana;
+	max-width: 900px;
+	margin: auto;
+}
 #principal, .secundario, .tituloPost{
-	color: blue;
+	color: #505050;
+}
+#principal{
+	font-size: 40px;
+	text-decoration: upercase;
+}
+a{
+	text-decoration: line-through;
+	color: #505050;
 }
 .tituloPost{
 	font-size: 16px;
 	font-style: italic;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.post{
+	background: #fff;
+	border: solid black 1px;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 0;
+	text-transform: capitalize;
+	text-align: justify;
+
+}
+.Post_Image{
+	margin-bottom: 15px;
+	width: 100%;
+}
+.iconeImg{
+	border: 3px solid black;
+	border-radius: 48%;
+}
+.listaContatos{
+	list-style-type: none;
+	padding-left: 15px;
+}
+.listaContatos li a {
+	text-decoration: none;
 }
