@@ -1,0 +1,1 @@
+Flex box: Desenvolvido como um método de distribuição de espaço no layout de uma interface, aceito na maioria dos navegadores.
