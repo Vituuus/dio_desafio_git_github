@@ -1,1 +1,3 @@
-Flex box: Desenvolvido como um método de distribuição de espaço no layout de uma interface, aceito na maioria dos navegadores.
+Flex Box: Desenvolvido como um método de distribuição de espaço no layout de uma interface, aceito na maioria dos navegadores.
+---------------------------------------------------
+Flex Wrap: Propriedade que define a quebra ou não de linha dos itens, por padrão essa propriedade vem como no-wrap, portantos os itens vão "vazar" caso não caibam mais na div
