@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fundamentos - Flex Basis</title>
+	<style>
+		.flex-container{
+			max-width: 500px;
+			border: 1px solid black;
+			display: flex;
+		}
+		.item{
+			background-color: purple;
+			color: white;
+			text-align: center;
+			margin: 5px;
+		}
+		.bauto{
+			flex-basis: auto;
+		}
+		.b-0{
+			flex-basis: 0;
+		}
+		.fg-1{
+			flex-grow: 1;
+		}
+		.fg-0{
+			flex-grow: 0;
+		}
+		.fg-2{
+			flex-grow: 2;
+		}
+		.w100{
+			flex-basis: 100px;
+			flex-wrap: wrap;
+		}
+	</style>
+</head>
+<body>
+	<p>Auto</p>
+	<div class="flex-container">
+		<div class="item bauto fg-1">A</div>
+		<div class="item bauto fg-1">BBB</div>
+		<div class="item bauto fg-1">CC</div>
+		<div class="item bauto fg-1">DEF</div>
+	</div>
+	<p>0</p>
+	<div class="flex-container">
+		<div class="item b-0 fg-1">A</div>
+		<div class="item b-0 fg-1">BBB</div>
+		<div class="item b-0 fg-1">CC</div>
+		<div class="item b-0 fg-1">DEF</div>
+	</div>
+	<p>basis + width</p>
+	<div class="flex-container">
+		<div class="item w100 fg-2">AAAAA</div>
+		<div class="item w100 fg-2">BBB</div>
+		<div class="item w100 fg-2">CC</div>
+		<div class="item w100 fg-2">DEF</div>
+	</div>
+
+<div>
+	
+</div>
+</body>
+</html>
