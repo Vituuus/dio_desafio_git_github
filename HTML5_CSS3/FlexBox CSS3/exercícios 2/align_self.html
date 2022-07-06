@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fundamento - Align Self</title>
+	<style>
+		.flex-container{
+			display: flex;
+			max-width: 350px;
+			background-color: dodgerblue;
+			border: 2px solid black;
+			margin: 5px;
+		}
+		.flex-items{
+			background-color: #f1f1f1;
+			color: black;
+			margin: 3px;
+			text-align: center;
+			font-size: 25px;
+
+		}
+		.center{
+			align-self: center;
+		}
+		.flex-start{
+			align-self: flex-start;
+		}
+		.flex-end{
+			align-self: flex-end;
+		}
+		.baseline{
+			align-self: baseline;
+		}
+		.stretch{
+			align-self: stretch;
+		}
+		.auto{
+			align-self: auto;
+		}
+		.direction{
+			flex-direction:column ;
+		}
+	</style>
+</head>
+<body>
+	<p>Row</p>
+	<div class="flex-container">
+		<div class="flex-items auto">123</div>
+		<div class="flex-items flex-start">AAA</div>	
+		<div class="flex-items flex-end">354</div>
+		<div class="flex-items stretch">Quanto pesa um quilo de pena?</div>
+		<div class="flex-items baseline">CCC</div>	
+		<div class="flex-items center">1V1</div>
+	</div>
+	<div class="flex-container">
+		<div class="flex-items baseline">123</div>
+		<div class="flex-items auto">AAA</div>	
+		<div class="flex-items flex-start">354</div>
+		<div class="flex-items center">Quanto pesa um quilo de pena?</div>
+		<div class="flex-items flex-end">CCC</div>	
+		<div class="flex-items stretch">1V1</div>
+	</div>
+	<p>Column</p>
+	<div class="flex-container direction">
+		<div class="flex-items auto">123</div>
+		<div class="flex-items flex-start">AAA</div>	
+		<div class="flex-items flex-end">354</div>
+		<div class="flex-items stretch">Quanto pesa um quilo de pena?</div>
+		<div class="flex-items baseline">CCC</div>	
+		<div class="flex-items center">1V1</div>
+	</div>
+	<div class="flex-container direction">
+		<div class="flex-items baseline">123</div>
+		<div class="flex-items auto">AAA</div>	
+		<div class="flex-items flex-start">354</div>
+		<div class="flex-items center">Quanto pesa um quilo de pena?</div>
+		<div class="flex-items flex-end">CCC</div>	
+		<div class="flex-items stretch">1V1</div>
+	</div>
+</body>
+</html>
