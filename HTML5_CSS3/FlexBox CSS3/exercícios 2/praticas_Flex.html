@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fundamentos - Flex</title>
+	<style>
+		.flex-container{
+			display: flex;
+			width: 400px;
+
+			background-color: dodgerblue;
+			border: 1px solid black;
+		}
+		.flex-items{
+			width: 100px;
+			margin: 10px;
+			color: black;
+			background-color: #f1f1f1;
+			line-height: 35px;
+			text-align: center;
+		}
+		.f-1{
+			flex: 1;
+		}
+		.f-2{
+			flex: 2;
+		}
+	</style>
+</head>
+<body>
+	<p>Flex : 1 = Grow 1 / Shrink 1 / Basis 0</p>
+	<div class="flex-container">
+		<div class="flex-items ">1</div>
+		<div class="flex-items f-1">222222</div>
+		<div class="flex-items ">3</div>
+		<div class="flex-items f-1">4</div>
+	</div>
+	<p>Flex : 2 = Grow 2 / Shrink 1 / Basis 0</p>
+	<div class="flex-container">
+		<div class="flex-items f-2">1</div>
+		<div class="flex-items f-2">222222</div>
+		<div class="flex-items f-2">3</div>
+		<div class="flex-items ">4</div>
+	</div>
+
+</body>
+</html>
