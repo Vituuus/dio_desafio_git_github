@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fundamentos - Order</title>
+	<style>
+		.flex-container{
+			display: flex;
+			width: 400px;
+			background-color: dodgerblue;
+			border: 2px solid black;
+			margin: 15px;
+		}
+		.flex-items{
+			text-align: center;
+			flex: 1;
+			margin: 5px;
+			color: black;
+			background-color: #f1f1f1;
+			line-height: 50px;
+		}
+		.o1{
+		 	order: 1;
+		}
+		.o2{
+		 	order: 2;
+		}
+		.o3{
+		 	order: 3;
+		}
+		.o4{
+		 	order: 4;
+		}
+		.column{
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<p>Ordenação em Row</p>
+	<div class="flex-container">
+		<div class="flex-items o4">1</div>
+		<div class="flex-items o2">2</div>
+		<div class="flex-items o3">3</div>
+		<div class="flex-items o1">4</div>
+	</div>
+	<p>Ordenação em Column</p>
+	<div class="flex-container column">
+		<div class="flex-items o3">1</div>
+		<div class="flex-items o1">2</div>
+		<div class="flex-items o4">3</div>
+		<div class="flex-items o2">4</div>
+	</div>
+
+
+</body>
+</html>
