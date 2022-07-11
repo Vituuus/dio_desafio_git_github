@@ -1,0 +1,266 @@
+/*Configurações Gerais*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'helvetica', 'Open Sans', 'sans-serif';
+}
+.flex-container{
+	display: flex;
+	max-width: 992px;
+	margin: auto;
+	width: 100%;
+	min-width: 320px;
+}
+div img{
+	display: block;
+	width: 100%;
+}
+.btn{
+	background-color: #f0cd51;
+	color: white;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 10px;
+	text-decoration: none;
+	margin-bottom: 10px;
+	border-radius: 30px;
+}
+/*Fim Configurações Gerais*/
+/*Inicio Listas e Links*/
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul li a{
+	text-decoration: none;
+	margin: 5px;
+}
+/*Fim Listas e Links*/
+/*Inicio Barra de Navegação*/
+header{
+	background-color: #f0cd51;
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+header .listItems{
+	display: flex;
+	max-width: 260px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+.listItems li a{
+	color: #fff;
+}
+header .barraNav{
+	justify-content: space-between;
+}
+/*Fim Barra de Navegação*/
+/*Inicio Apresentação*/
+.apresentacao{
+	height: 100vh;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.apresentacao .textoApresentacao{
+	min-height: 200px;
+}
+.textoApresentacao h1{
+	color: #f0cd51;
+	margin-bottom: 10px;
+	font-size: 48px;
+}
+/*Fim Apresentação*/
+/*Inicio Quem Somos*/
+#quemSomos{
+	align-items: center;
+	justify-content: space-between;
+}
+#quemSomos h2{
+	font-size: 32px;
+	color: #f0cd51;
+	display: flex;
+	margin-bottom: 20px;
+}
+#quemSomos h2::before{
+	content: "";
+	height: 50px;
+	width: 5px;
+	margin-right: 5px;
+	background-color: #f0cd51;
+	position: relative;
+}
+#quemSomos p{
+	width: 90%;
+	margin-bottom: 20px;
+
+}
+#quemSomos img{
+	min-width: 450px;
+}
+/*Fim Quem Somos*/
+/*Inicio Serviços*/
+.containerExterno{
+	background-color: #f0cd51;
+	width: 100%;
+}
+#serviços{
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+#serviços h2{
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+.listaServiços{
+	display: flex;
+	justify-content: space-between;
+}
+.listaServiços .itemServiço{
+	text-align: center;
+}
+.itemServiço a{
+	width: 220px;
+	background-color: #fff;
+	border-radius: 30px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #f0cd51;
+	margin-top: 20px;
+	font-size: 12px;
+	padding: 5px 10px;
+	font-weight: 700;
+}
+.itemServiço p{
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 20px;
+}
+.itemServiço img{
+	width: 80%;
+	margin: auto;
+}
+/*Fim Serviços*/
+/*Inicio Planos*/
+#planos{
+	flex-direction: column;
+	min-height: 100vh;
+	padding-top: 50px;
+}
+#planos h2{
+	font-size: 32px;
+}
+.listaPlanos{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.itemPlano{
+	flex: 1;
+	border: 5px solid #f0cd51;
+	margin-right: 20px;
+	padding: 10px;
+	max-width: 240px;
+
+}
+.itemPlano .btn{
+	height: 50px;
+	width: 200px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.itemPlano h3{
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 20px;
+}
+.itemPlano h3::after{
+	content: "";
+	background-color: #f0cd51;
+	width: 75%;
+	align-self: center;
+	height: 3px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.itemPlano ul{
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.itemPlano ul li{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.itemPlano ul li::before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: #f0cd51;
+	margin-right: 5px;
+}
+/*Fim Planos*/
+/*Inicio Rodapé*/
+footer{
+	background-color: #f0cd51;
+	height: 70px;
+	display: flex;
+	align-items: center;
+}
+footer .footer{
+	justify-content: space-between;
+	color: #fff;
+}
+/*Fim Rodapé*/
+/*Mobile*/
+@media(max-width: 992px){
+	.flex-container{
+		flex-direction: column;
+	}
+	.apresentacao{
+		flex-direction: column-reverse;
+	}
+	.apresentacao .textoApresentacao{
+		width: 100%;
+	}
+	#quemSomos{
+		flex-direction: column-reverse;
+	}
+	#quemSomos img{
+		min-width: 320px;
+		margin: auto;
+	}
+	.listItems{
+		flex-direction: column;
+	}
+	.itemServiço img{
+		width: 50%;
+		margin: auto;
+	}
+	.listaPlanos{
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 10px;
+	}
+	.listaPlanos .itemPlano{
+		max-width: 90%;
+		margin: auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
