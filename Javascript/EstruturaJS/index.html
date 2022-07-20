@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/estilo.css"/>
     <script src="assets/js/script.js"></script>
-    <title>Estrutura Javascripit</title>
+    <title>Projeto Contador</title>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
+    <div class="flex-container">
+        <h1>Olá Mundo!</h1>
+        <p>Esse é meu primeiro projeto Javascript!</p>
+    </div>
+    <div id="contador">
+        <button name="subtrair" id="subtrair" onclick="decrement()">-</button>
+        <span id="currentNumber">0</span>
+        <button name="adicionar" id="adicionar" onclick="increment()">+</button>
+    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

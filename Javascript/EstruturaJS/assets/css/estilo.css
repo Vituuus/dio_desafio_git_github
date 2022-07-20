@@ -1,3 +1,27 @@
 body{
     color: aqua;
 }
+.flex-container{
+    display: flex;
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    flex-flow: wrap column;
+    align-items: center;
+}
+ #contador{
+  flex-flow: row nowrap;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contador button{
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 13px;
+}
+#currentNumber{
+    padding: 5px;
+    color: white;
+}
